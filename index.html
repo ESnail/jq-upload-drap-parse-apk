@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery 拖拽上传</title>
+  <link rel="stylesheet" href="js/jquery_upload_file/css/jquery.fileupload.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+        font-family: '微软雅黑';
+        padding: 50px 0 0 50px;
+    }
+    ul {
+        list-style: none;
+    }
+    .non {
+        display: none;
+    }
+    .error {
+        margin-top: 10px;
+        color: red;
+        font-weight: 500;
+        font-size: 12px;
+    }  
+
+    .upload-wrap {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        padding: 10px;
+        width: 610px;
+        font-size: 12px;
+        box-shadow: 0 0 1px 1px #000;
+    }
+    .upload-wrap .title {
+        font-size: 14px;
+        font-weight: 700;
+        height: 25px;
+        line-height: 25px;
+        text-align: left;
+    }
+    .upload-wrap .upload-con,
+    .upload-wrap .uploaded-con {
+        float: left;
+    }
+    .upload-wrap .upload-con {
+        width: 360px;
+        margin-right: 10px;
+    }
+    .upload-wrap .upload-con .upload-area {
+        margin-top: 10px;
+        height: 258px;
+        border: 1px dashed #ccc;
+        text-align: center;
+        cursor: pointer;
+    }
+    .upload-wrap .upload-con .upload-area.active {
+        border-color: #3a8df3;
+        background: rgba(33, 150, 244, .3);
+    }
+    .upload-wrap .upload-con input[type="file"] {
+        display: none;
+    }
+    .upload-wrap .upload-con .upload-area .icon-upload {
+        margin: 50px auto 10px;
+        display: block;
+        width: 64px;
+        height: 64px;
+        background: url('./img/upload_cloud.svg');
+        background-size: contain;
+    }
+    .upload-wrap .upload-con .upload-area .upload-text {
+        font-size: 14px;
+        color: #aaa;
+        line-height: 30px;
+    }
+    .upload-wrap .upload-con .upload-area .upload-text em {
+        color: #2196f3;
+        font-style: normal;
+        font-weight: bold;
+    }
+    .upload-wrap .upload-con .upload-area .upload-tip {
+        color: #ccc;
+    }
+    .upload-wrap .uploaded-con {
+        position: relative;
+        width: calc(100% - 370px);
+    }
+    .upload-wrap .uploaded-con .title {
+        width: 68px;
+        text-indent: 5px;
+        border-bottom: 2px solid #3a8df3;
+    }
+    .upload-wrap .uploaded-con .error.history {
+        position: absolute;
+        top: -5px;
+        left: 80px;
+    }
+    .upload-wrap .uploaded-con .upload-list {
+        overflow-y: auto;
+        margin-top: 8px;
+        height: 258px;
+        border: 1px solid #ccc;
+    }
+    .upload-wrap .uploaded-con .upload-list li {
+        position: relative;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        text-align: left;
+    }
+    .upload-wrap .uploaded-con .upload-list li.active {
+        background: rgba(33, 150, 244, .3);
+        box-shadow: inset 0 0 2px 2px #fff;
+        transition: all .3s ease;
+    }
+    .upload-wrap .uploaded-con .upload-list li i {
+        position: absolute;
+        left: 5px;
+        top: 7.5px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url('./img/android.svg');
+        background-size: contain;
+    }
+    .upload-wrap .uploaded-con .upload-list li p {
+        margin-left: 35px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .upload-wrap .uploaded-con .upload-list li p.app-name {
+        color: orange;
+    }
+
+    .progress-wrap {
+        position: absolute;
+        background: #f5f5f5; 
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        text-align: center;
+    }
+    .progress-wrap .upload-cancel {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #999;
+        color: #fff;
+        text-align: center;
+        line-height: 13px;
+        cursor: pointer;
+    }
+    .progress-wrap .upload-cancel:hover {
+        background: #000;
+    }
+    .progress-wrap .app-info {
+        position: relative;
+        margin: 70px 25px;
+        padding: 5px;
+        height: 90px;
+        text-align: left;
+    }
+    .progress-wrap .app-info .icon-app {
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: url('./img/android.svg');
+        background-size: contain;
+    }
+    .progress-wrap .app-info p {
+        margin-left: 95px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #999;
+    }
+    .progress-wrap p {
+        line-height: 25px;
+    }
+    .progress-wrap .app-info p.name {
+        margin-top: 10px;
+        color: orange;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .progress-wrap .progress-bar {
+        padding: 3px 0;
+        width: 100%;
+        height: 3px;
+        background: #ddd;
+    }
+    .progress-wrap .progress-bar .progress {
+        display: block;
+        width: 0;
+        height: 100%;
+        background: #27bf27;
+    }
+    .progress-wrap .app-parse {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .progress-wrap .app-parse:after {
+        content: '...';
+        position: absolute;
+        left: 62%;
+        top: 0;
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: ellipse 1s linear infinite;
+    }
+    @keyframes ellipse {
+        form { width: 0; }
+        to { width: 10px; }
+    }
+
+    .selected-wrap {
+        margin: 10px;
+        padding: 10px;
+        width: 610px;
+        font-size: 12px;
+        box-shadow: 0 0 1px 1px #3a8df3;
+    }
+    .selected-wrap .app-info {
+        overflow: hidden;
+    }
+    .selected-wrap .app-info dt {
+        color: orange;
+    }
+  </style>
+</head>
+<body>
+  
+    <div class="upload-wrap">
+        <div class="upload-con">
+            <h2 class="title">请上传或选择目标版本安装包 <span class="error upload" id="upload_err"></span></h2>
+            <div class="upload-area" id="upload_area">
+                <i class="icon-upload"></i>
+                <p class="upload-text">将安装包拖拽至此上传或 <em>选择文件</em></p>
+                <p class="upload-tip">支持 APK 文件，最大不超过 300 MB</p>
+                <input type="file" id="upload_input" name="file" accept="application/vnd.android.package-archive" data-size="300"/>
+            </div>
+        </div>
+        <div class="uploaded-con">
+            <h2 class="title">历史上传</h2>
+            <span class="error history" id="history_msg"></span>
+            <ul class="upload-list loading" id="history_list">
+                
+            </ul>
+        </div>
+
+        <div class="progress-wrap non" id="progress_wrap">
+            <div class="app-parse" id="app_parse">正在解析文件信息，请稍后</div>
+            <div class="con">
+                <span title="取消上传" class="upload-cancel" id="upload_cancel">x</span>
+                <div class="app-info">
+                    <i class="icon-app"></i>
+                    <p class="name"></p>
+                    <p>包名：<span class="package"></span> 版本：<span class="version"></span> 版本Code：<span class="version-code"></span></p>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress"></span>
+                </div>
+                <p>上传中 (<span class="num"></span> %，<span class="size"></span>/s)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="selected-wrap non">
+        <dl class="app-info non" id="app_info">
+            <dt class="name"></dt>
+            <dd>包名：<span class="package"></span></dd>
+            <dd>版本：<span class="version"></span></dd>
+            <dd>版本Code：<span class="version-code"></span></dd>
+        </dl>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery_upload_file/js/jquery.ui.widget.js"></script>
+    <script src="js/jquery_upload_file/js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery_upload_file/js/jquery.fileupload.js"></script>
+    <script src="js/app-info-parser.min.js"></script>
+
+  <script>
+    var uploadMod = {
+        doms: {
+            uploadArea: $('#upload_area'),
+            uploadInput: $('#upload_input'),
+            uploadErr: $('#upload_err'),
+            progressWrap: $('#progress_wrap')
+        },
+        data: {
+            selectedAPK: {}
+        },
+        uploadXHR: null,
+        event: function () {
+            $(document).on({ // 阻止默认拖拽
+                dragleave: function(e) { e.preventDefault(); },
+                drop: function(e) { e.preventDefault(); },
+                dragenter: function(e) { e.preventDefault(); },
+                dragover: function(e) { e.preventDefault(); }
+            });
+
+            $('body').on('click', '#upload_input', function (e) {
+                e.stopPropagation();
+                uploadMod.methods.fileUpload();
+            }).on('click drop dragenter dragover dragleave', '#upload_area', function(e) {
+                e.preventDefault();
+                uploadMod.doms.uploadErr.html('');
+                
+                switch (e.type) {
+                    case 'click':
+                        $('#upload_input').val(null);
+                        $('#upload_input').click();
+                        break;
+                    case 'drop':
+                        uploadMod.doms.uploadArea.removeClass('active');
+                        $('#upload_input').val(null);
+                        uploadMod.methods.fileUpload();
+                        break;
+                    case 'dragenter':
+                    case 'dragover':
+                        uploadMod.doms.uploadArea.addClass('active');
+                        break;
+                    case 'dragleave':
+                        uploadMod.doms.uploadArea.removeClass('active');
+                        break;
+                }
+            }).on('click', '#history_list li', function () {
+                var $this = $(this);
+                $this.siblings().removeClass('active');
+                $this.addClass('active');
+                uploadMod.data.selectedAPK = $this.data();
+                uploadMod.methods.setAppInfo();
+                $('.selected-wrap').show();
+            }).on('click', '#upload_cancel', function () {
+                uploadMod.uploadXHR.abort();
+                uploadMod.doms.progressWrap.hide();
+            });
+        },
+        methods: {
+            init: function() {
+                uploadMod.event();
+            },
+            setAppInfo: function () {
+                $('#app_info').hide();
+                $('#app_info .name').html(uploadMod.data.selectedAPK.name);
+                $('#app_info .package').html(uploadMod.data.selectedAPK.package);
+                $('#app_info .version').html(uploadMod.data.selectedAPK.version);
+                $('#app_info .version-code').html(uploadMod.data.selectedAPK.version_code);
+                $('#app_info').show();
+            },
+            fileCheck: function(e, data) {
+                // 文件格式及文件大小校验
+                var acceptFileTypes = uploadMod.doms.uploadInput.attr('accept');
+                var maxSize = uploadMod.doms.uploadInput.data('size') * 1024 * 1024; // 单位mb，需要转换为b
+                var fileTypeFlag = data.originalFiles.every(function(item) {
+                    return acceptFileTypes.indexOf(item.type) > -1;
+                });
+                if (!fileTypeFlag) {
+                    uploadMod.doms.uploadErr.html('请上传 APK 文件');
+                    return false;
+                }
+                var fileSizeFlag = data.originalFiles.every(function(item) {
+                    return item.size > 0 && item.size <= maxSize;
+                });
+                if (!fileSizeFlag) {
+                    data = {};
+                    uploadMod.doms.uploadErr.html('文件大小不正确');
+                    return false;
+                }
+                
+                uploadMod.doms.progressWrap.show();
+                var $appParse = uploadMod.doms.progressWrap.find('.app-parse'),
+                    $progressCon = uploadMod.doms.progressWrap.find('.con');
+                $appParse.show();
+                $progressCon.hide();
+
+                // apk 文件解析
+                var parser = new AppInfoParser(data.files[0]);
+                parser.parse().then(function(result) {
+                    uploadMod.doms.uploadErr.html('');
+                    var appInfo = result.application || {};
+                    var formAppInfo = {
+                        name: appInfo.label ? (Array.isArray(appInfo.label) ? appInfo.label[0] : appInfo.label) : '',
+                        package: result.package,
+                        version: result.versionName,
+                        version_code: result.versionCode
+                    };
+
+                    // 进度条初始化
+                    $appParse.hide();
+                    $progressCon.show();
+                    if (result.icon) {
+                        uploadMod.doms.progressWrap.find('.icon-app').css('background-image', 'url("' + result.icon + '")');
+                    }
+                    uploadMod.doms.progressWrap.find('.name').html(formAppInfo.name);
+                    uploadMod.doms.progressWrap.find('.package').html(formAppInfo.package);
+                    uploadMod.doms.progressWrap.find('.version').html(formAppInfo.version);
+                    uploadMod.doms.progressWrap.find('.version-code').html(formAppInfo.version_code);
+                    uploadMod.doms.progressWrap.find('.progress').css('width', 0);
+                    uploadMod.doms.progressWrap.find('.num').html(0);
+                    uploadMod.doms.progressWrap.find('.size').html(0);
+
+                    // 设置上传接口参数
+                    uploadMod.uploadXHR = data;
+                    $(e.target).fileupload(
+                        'option',
+                        'formData',
+                        formAppInfo
+                    );
+                    data.submit();
+                }).catch(function (err) {
+                    uploadMod.doms.progressWrap.hide();
+                    uploadMod.doms.uploadErr.html('文件解析错误，请重新上传');
+                    data.abort();
+                });
+                
+                // console.error() 监控处理
+                consoleError = window.console.error;
+                window.console.error = function () {
+                    consoleError && consoleError.apply(window, arguments);
+                    for (var info in arguments) {
+                        if (arguments[info] == 'File format is not recognized.') {
+                            $('#app_parse').html('<p style="color:red;">由于您上传了非真正的 APK 文件，导致脚本解析出错，即将重新刷新页面，给您带来不好的体验，敬请原谅</p>');
+                            setTimeout(function () {
+                                history.go(0);
+                            }, 3000);
+                            return false;
+                        }
+                    }
+                };
+            },
+            fileUpload: function(el) {
+                $('#upload_input').fileupload({
+                    url: 'http://localhost:80/jq-drag-upload-apk-parse/upload.php',
+                    dataType: 'json',
+                    multi: false,
+                    add: uploadMod.methods.fileCheck,
+                    paste: function () { return false; },
+                    done: function(e, data) { // 上传成功回调
+                        var result = data.result;
+                        if (result && result.flag && result.data) {
+                            uploadMod.doms.uploadErr.html(result.msg || '上传成功');
+                            uploadMod.data.selectedAPK = result.data;
+                            uploadMod.methods.renderHistory(result.data);
+                        } else {
+                            uploadMod.doms.progressWrap.hide();
+                            uploadMod.doms.uploadErr.html(result.msg || '上传失败');
+                        }
+                    },
+                    fail: function(e, data) {
+                        if (data.errorThrown == 'abort') {
+                            uploadMod.doms.uploadErr.html('已取消上传，可重新上传');
+                        } else {
+                            uploadMod.doms.uploadErr.html('上传失败，请重新上传');
+                        }
+                    },
+                    progressall: function(e, data) {
+                        var progress = parseInt(data.loaded / data.total * 100, 10);
+                        uploadMod.doms.progressWrap.find('.progress').css('width', progress + '%');
+                        uploadMod.doms.progressWrap.find('.num').html(progress);
+                        uploadMod.doms.progressWrap.find('.size').html(bytesToSize(data.bitrate));
+
+                        function bytesToSize(bit) {
+                            if (bit === 0) return '0 B';
+                            var bytes = bit / 8;
+                            var k = 1024,
+                                sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+                                i = Math.floor(Math.log(bytes) / Math.log(k));
+                         
+                           return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+                        }
+                    }
+                })
+            },
+            renderHistory: function (item) {
+                $('#history_list li').each(function (index, el) {
+                    $(el).removeClass('active');
+                });
+
+                var $li = $('<li data-id="' + item.id + '" data-name="' + item.name + '" data-package="' + item.package + '" data-version="' + item.version + '" data-version_code="' + item.version_code + '" class="active"></li>');
+                var $liChild = $('<i class="icon-app"></i><p class="app-name">' + item.name + '</p><p>版本：' + item.version + '</p>'); 
+                $li.append($liChild);
+                $('#history_list').prepend($li);
+                uploadMod.doms.progressWrap.hide();
+                uploadMod.methods.setAppInfo();
+                $('.selected-wrap').show();
+            }
+        }
+    };
+    uploadMod.methods.init();
+  </script>
+</body>
+</html>

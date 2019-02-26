@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery 拖拽上传</title>
+  <link rel="stylesheet" href="js/jquery_upload_file/css/jquery.fileupload.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #dropzone {
+        background: palegreen;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+    }
+    #dropzone.in {
+        width: 600px;
+        height: 200px;
+        line-height: 200px;
+        font-size: larger;
+    }
+    #dropzone.hover {
+        background: lawngreen;
+    }
+    #dropzone.fade {
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h4>拖拽 css 过渡 放大效果</h4>
+  <div id="dropzone" class="fade well">drop files here</div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery_upload_file/js/jquery.ui.widget.js"></script>
+  <script src="js/jquery_upload_file/js/jquery.fileupload.js"></script>
+  <script src="js/jquery_upload_file/js/jquery.iframe-transport.js"></script>
+
+  <script src="https://raw.github.com/betamax/getImageData/master/jquery.getimagedata.min.js"></script>
+
+  <script>
+    /*$(document).bind('dragover', function (e) {
+        var dropZone = $('#dropzone'),
+            timeout = window.dropZoneTimeout;
+        if (timeout) {
+            clearTimeout(timeout);
+        } else {
+            dropZone.addClass('in');
+        }
+        var hoveredDropZone = $(e.target).closest(dropZone);
+        dropZone.toggleClass('hover', hoveredDropZone.length);
+        window.dropZoneTimeout = setTimeout(function () {
+            window.dropZoneTimeout = null;
+            dropZone.removeClass('in hover');
+        }, 100);
+    });
+    $(document).bind('drop dragover', function (e) {
+        e.preventDefault();
+    });*/
+
+    $(document).bind('drop dragover', function (e) {
+        // Prevent the default browser drop action:
+        e.preventDefault();
+    });
+    $(document).bind('drop', function (e) {
+        var url = $(e.originalEvent.dataTransfer.getData('text/html')).filter('img').attr('src');
+        if (url) {
+            $.getImageData({
+                url: url,
+                success: function (img) {
+                    var canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    if (canvas.getContext && canvas.toBlob) {
+                        canvas.getContext('2d').drawImage(img, 0, 0, img.width, img.height);
+                        canvas.toBlob(function (blob) {
+                            $('#fileupload').fileupload('add', {files: [blob]});
+                        }, "image/jpeg");
+                    }
+                }
+            });
+        }
+    });
+  </script>
+</body>
+</html>
