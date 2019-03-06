@@ -1,54 +1,54 @@
-# »ùÓÚ jq ÊµÏÖÍÏ×§ÉÏ´« APK ÎÄ¼ş£¬js½âÎö APK ĞÅÏ¢
+# åŸºäº jq å®ç°æ‹–æ‹½ä¸Šä¼  APK æ–‡ä»¶ï¼Œjsè§£æ APK ä¿¡æ¯
 
-### ¼¼ÊõÕ»
+### æŠ€æœ¯æ ˆ
 
 - jquery
-- ÎÄ¼şÉÏ´«£ºjquery.fileupload£¬[github ÎÄµµ](https://github.com/blueimp/jQuery-File-Upload/wiki/API)
-- apk ÎÄ¼ş½âÎö£ºapp-info-parser£¬[github ÎÄµµ](https://github.com/chenquincy/app-info-parser)
+- æ–‡ä»¶ä¸Šä¼ ï¼šjquery.fileuploadï¼Œ[github æ–‡æ¡£](https://github.com/blueimp/jQuery-File-Upload/wiki/API)
+- apk æ–‡ä»¶è§£æï¼šapp-info-parserï¼Œ[github æ–‡æ¡£](https://github.com/chenquincy/app-info-parser)
 
-²Î¿¼£º[Ç°¶Ë½âÎöipa¡¢apk°²×°°üĞÅÏ¢ ¡ª¡ª app-info-parser](https://www.jianshu.com/p/db6347d95947)
+å‚è€ƒï¼š[å‰ç«¯è§£æipaã€apkå®‰è£…åŒ…ä¿¡æ¯ â€”â€” app-info-parser](https://www.jianshu.com/p/db6347d95947)
 
-### Ö§³Ö¹¦ÄÜ
+### æ”¯æŒåŠŸèƒ½
 
-- µã»÷»òÍÏ×§ÉÏ´« apk ÎÄ¼ş
-- Ğ£ÑéÎÄ¼şÀàĞÍ¼°ÎÄ¼ş´óĞ¡
-- js ½âÎö apk ÎÄ¼şĞÅÏ¢Õ¹Ê¾²¢Í¨¹ıÉÏ´«½Ó¿ÚÌá½»¸øºó¶Ë
-- Ö§³ÖÉÏ´«¹ı³ÌÖĞÈ¡ÏûÉÏ´«
-- Ö§³ÖÉÏ´«³É¹¦ÏÔÊ¾ÉÏ´«ĞÅÏ¢
-- Ö§³Ö½âÎö¡¢ÉÏ´«µÈÓÑºÃÌáÊ¾
-- Ö§³Ö´ÓÀúÊ·¼ÇÂ¼£¨ËùÓĞÒÑÉÏ´«ÎÄ¼ş£©ÖĞÑ¡ÔñÒ»¸ö
-- Ö§³Ö¼ÙÎÄ¼ş´¦Àí£¬±ÈÈç .txt ÎÄ¼ş¸ÄÎª .apk ÎÄ¼ş
-- ÉÏ´«½ø¶ÈÊµÊ±¸üĞÂ£¬°Ù·Ö±È£¬B/s
-- ÍÏ×§½øÈëÍÏ×§ÇøÊ±£¬¸ßÁÁÏÔÊ¾
+- ç‚¹å‡»æˆ–æ‹–æ‹½ä¸Šä¼  apk æ–‡ä»¶
+- æ ¡éªŒæ–‡ä»¶ç±»å‹åŠæ–‡ä»¶å¤§å°
+- js è§£æ apk æ–‡ä»¶ä¿¡æ¯å±•ç¤ºå¹¶é€šè¿‡ä¸Šä¼ æ¥å£æäº¤ç»™åç«¯
+- æ”¯æŒä¸Šä¼ è¿‡ç¨‹ä¸­å–æ¶ˆä¸Šä¼ 
+- æ”¯æŒä¸Šä¼ æˆåŠŸæ˜¾ç¤ºä¸Šä¼ ä¿¡æ¯
+- æ”¯æŒè§£æã€ä¸Šä¼ ç­‰å‹å¥½æç¤º
+- æ”¯æŒä»å†å²è®°å½•ï¼ˆæ‰€æœ‰å·²ä¸Šä¼ æ–‡ä»¶ï¼‰ä¸­é€‰æ‹©ä¸€ä¸ª
+- æ”¯æŒå‡æ–‡ä»¶å¤„ç†ï¼Œæ¯”å¦‚ .txt æ–‡ä»¶æ”¹ä¸º .apk æ–‡ä»¶
+- ä¸Šä¼ è¿›åº¦å®æ—¶æ›´æ–°ï¼Œç™¾åˆ†æ¯”ï¼ŒB/s
+- æ‹–æ‹½è¿›å…¥æ‹–æ‹½åŒºæ—¶ï¼Œé«˜äº®æ˜¾ç¤º
 
-### demo Ô¤ÀÀ
-**ËµÃ÷**
+### demo é¢„è§ˆ
+**è¯´æ˜**
 
-ÓÉÓÚÉÏ´«½Ó¿ÚĞèÒªºó¶Ë½Ó¿ÚµÄÖ§³Ö£¬ËùÒÔÃ»·¨ÓÃ¾²Ì¬Ò³ÃæÕ¹Ê¾ÍêÕûµÄ½»»¥¡£Òò´Ë£¬ÔÚÕâ¶ù·Å¸öÔ¤ÀÀÍ¼¡£
+ç”±äºä¸Šä¼ æ¥å£éœ€è¦åç«¯æ¥å£çš„æ”¯æŒï¼Œæ‰€ä»¥æ²¡æ³•ç”¨é™æ€é¡µé¢å±•ç¤ºå®Œæ•´çš„äº¤äº’ã€‚å› æ­¤ï¼Œåœ¨è¿™å„¿æ”¾ä¸ªé¢„è§ˆå›¾ã€‚
 
-![demo](https://github.com/ESnail/jq-upload-drap-parse-apk/raw/master/screenshot/jq-upload-drap-parse-apk.gif)
+![demo](https://github.com/ESnail/jq-upload-drap-parse-apk/blob/master/shortscreen/tree-select-newtree-loading.gif?raw=true)
 
-ÎªÁË±ÜÃâ gif Í¼Ì«´ó£¬Ö»Â¼ÆÁÁËµã»÷ÉÏ´«³É¹¦µÄÇé¿ö¡£ÆäËûÇé¿öÃ»Â¼ÆÁ£¬¿É×ÔĞĞÏÂÔØ demo £¬´î½¨ºó¶Ë»·¾³£¬Ä£ÄâÉÏ´«½Ó¿ÚÊµÏÖ¡£demo ÖĞÓÃ php ÓïÑÔÄ£ÄâÊµÏÖÁËÉÏ´«½Ó¿Ú¡£
+ä¸ºäº†é¿å… gif å›¾å¤ªå¤§ï¼Œåªå½•å±äº†ç‚¹å‡»ä¸Šä¼ æˆåŠŸçš„æƒ…å†µã€‚å…¶ä»–æƒ…å†µæ²¡å½•å±ï¼Œå¯è‡ªè¡Œä¸‹è½½ demo ï¼Œæ­å»ºåç«¯ç¯å¢ƒï¼Œæ¨¡æ‹Ÿä¸Šä¼ æ¥å£å®ç°ã€‚demo ä¸­ç”¨ php è¯­è¨€æ¨¡æ‹Ÿå®ç°äº†ä¸Šä¼ æ¥å£ã€‚
 
-### ÄÑµã
+### éš¾ç‚¹
 
-- js ½âÎö APK ÎÄ¼şĞÅÏ¢
-- ÍÏ×§ÉÏ´«£¬µã»÷ÉÏ´«ºÍÍÏ×§ÉÏ´«°ó¶¨µ½Ò»Æğ
-- ÔÚÉÏ´«Ö®Ç°²»ÖªµÀ APK ÎÄ¼şĞÅÏ¢£¬ĞèÒªÖ´ĞĞÉÏ´«²Ù×÷¹ı³ÌÖĞ½«½âÎöµÄÎÄ¼şĞÅÏ¢×÷Îª²ÎÊı·Åµ½ÉÏ´«½Ó¿ÚÖĞ
-- ÉÏ´«¹ı³ÌÖĞÈ¡ÏûÉÏ´«
-- ¼ÙÎÄ¼ş½âÎö´íÎó´¦Àí£¬js ¼à¿Ø¿ØÖÆÌ¨´íÎó
+- js è§£æ APK æ–‡ä»¶ä¿¡æ¯
+- æ‹–æ‹½ä¸Šä¼ ï¼Œç‚¹å‡»ä¸Šä¼ å’Œæ‹–æ‹½ä¸Šä¼ ç»‘å®šåˆ°ä¸€èµ·
+- åœ¨ä¸Šä¼ ä¹‹å‰ä¸çŸ¥é“ APK æ–‡ä»¶ä¿¡æ¯ï¼Œéœ€è¦æ‰§è¡Œä¸Šä¼ æ“ä½œè¿‡ç¨‹ä¸­å°†è§£æçš„æ–‡ä»¶ä¿¡æ¯ä½œä¸ºå‚æ•°æ”¾åˆ°ä¸Šä¼ æ¥å£ä¸­
+- ä¸Šä¼ è¿‡ç¨‹ä¸­å–æ¶ˆä¸Šä¼ 
+- å‡æ–‡ä»¶è§£æé”™è¯¯å¤„ç†ï¼Œjs ç›‘æ§æ§åˆ¶å°é”™è¯¯
 
-### ÊµÏÖ
+### å®ç°
 
-**1. js ½âÎö APK ÎÄ¼şĞÅÏ¢**
+**1. js è§£æ APK æ–‡ä»¶ä¿¡æ¯**
 
-¾­¹ı²éÔÄ£¬ÁË½âµ½ **APK** ÎÄ¼şµÄ±¾ÖÊ¾ÍÊÇÒ»¸ö**Ñ¹Ëõ°ü**£¬ÆäÖĞ°üº¬Ò»¶ÑXMLÎÄ¼ş£¬×Ê²úºÍÀàÎÄ¼ş¡£javascript ½âÎö APK ÎÄ¼şĞÅÏ¢£¬Òª×öµÄ¾ÍÊÇÏÈ½âÑ¹£¬È»ºó¶ÁÈ¡ÆäÖĞÏà¹ØµÄÎÄ¼ş£¬¾ÍÄÜµÃµ½ÎÄ¼şĞÅÏ¢ÁË¡£
+ç»è¿‡æŸ¥é˜…ï¼Œäº†è§£åˆ° **APK** æ–‡ä»¶çš„æœ¬è´¨å°±æ˜¯ä¸€ä¸ª**å‹ç¼©åŒ…**ï¼Œå…¶ä¸­åŒ…å«ä¸€å †XMLæ–‡ä»¶ï¼Œèµ„äº§å’Œç±»æ–‡ä»¶ã€‚javascript è§£æ APK æ–‡ä»¶ä¿¡æ¯ï¼Œè¦åšçš„å°±æ˜¯å…ˆè§£å‹ï¼Œç„¶åè¯»å–å…¶ä¸­ç›¸å…³çš„æ–‡ä»¶ï¼Œå°±èƒ½å¾—åˆ°æ–‡ä»¶ä¿¡æ¯äº†ã€‚
 
-ÄÑµãÔÚ½âÑ¹ÉÏ£¬²Î¿¼µÄ»ù±¾¶¼ĞèÒª½èÖú node »·¾³¡£ÓÉÓÚÏÖÔÚÎ¬»¤µÄÏµÍ³ÊÇ»ùÓÚ jquery »·¾³µÄ¡£ËùÒÔ×îÖÕ²ÉÓÃÁË
-[Ç°¶Ë½âÎöipa¡¢apk°²×°°üĞÅÏ¢ ¡ª¡ª app-info-parser](https://www.jianshu.com/p/db6347d95947) ¸ÃÎÄµÄ·½°¸£¬ºÜºÃµÄ½â¾öÁËÎÊÌâ¡£ÔÚ´Ë·Ç³£¸ĞĞ»¸Ã×÷Õß¡£
+éš¾ç‚¹åœ¨è§£å‹ä¸Šï¼Œå‚è€ƒçš„åŸºæœ¬éƒ½éœ€è¦å€ŸåŠ© node ç¯å¢ƒã€‚ç”±äºç°åœ¨ç»´æŠ¤çš„ç³»ç»Ÿæ˜¯åŸºäº jquery ç¯å¢ƒçš„ã€‚æ‰€ä»¥æœ€ç»ˆé‡‡ç”¨äº†
+[å‰ç«¯è§£æipaã€apkå®‰è£…åŒ…ä¿¡æ¯ â€”â€” app-info-parser](https://www.jianshu.com/p/db6347d95947) è¯¥æ–‡çš„æ–¹æ¡ˆï¼Œå¾ˆå¥½çš„è§£å†³äº†é—®é¢˜ã€‚åœ¨æ­¤éå¸¸æ„Ÿè°¢è¯¥ä½œè€…ã€‚
 
 ```
- // apk ÎÄ¼ş½âÎö
+ // apk æ–‡ä»¶è§£æ
 var parser = new AppInfoParser(data.files[0]);
 parser.parse().then(function(result) {
     uploadMod.doms.uploadErr.html('');
@@ -60,24 +60,24 @@ parser.parse().then(function(result) {
         version_code: result.versionCode
     };
     
-    // Ê¡ÂÔÆäËû²Ù×÷´úÂë...
+    // çœç•¥å…¶ä»–æ“ä½œä»£ç ...
 }).catch(function (err) {
-    uploadMod.doms.uploadErr.html('ÎÄ¼ş½âÎö´íÎó£¬ÇëÖØĞÂÉÏ´«');
+    uploadMod.doms.uploadErr.html('æ–‡ä»¶è§£æé”™è¯¯ï¼Œè¯·é‡æ–°ä¸Šä¼ ');
 });
 ```
 
-ËµÃ÷£º
-- ÓÉÓÚ app-info-parser µ×²ãÓÃÁË **async** Óï·¨£¬ÔÚ IE ÏÂÊÇ²»¼æÈİµÄ¡£ÔÚ firefox¡¢chrome ÏÂÊÇÕı³£µÄ¡£
-- ÉÏ´«¼Ù APK ÎÄ¼ş£¬²»ÄÜ´¦Àí£¬js ½Å±¾»á±¨´í£º`File format is not recognized.`¡£Ä¿Ç°Ïëµ½µÄ½â¾ö·½°¸ÊÇ js ¼àÌı´íÎó£¬È»ºó½øĞĞ´¦Àí¡£ÈôÓĞ¸üºÃÏë·¨µÄ£¬»¶Ó­@ÎÒ¡£ÔÚ´ËÌáÇ°¸ĞĞ»¡£
+è¯´æ˜ï¼š
+- ç”±äº app-info-parser åº•å±‚ç”¨äº† **async** è¯­æ³•ï¼Œåœ¨ IE ä¸‹æ˜¯ä¸å…¼å®¹çš„ã€‚åœ¨ firefoxã€chrome ä¸‹æ˜¯æ­£å¸¸çš„ã€‚
+- ä¸Šä¼ å‡ APK æ–‡ä»¶ï¼Œä¸èƒ½å¤„ç†ï¼Œjs è„šæœ¬ä¼šæŠ¥é”™ï¼š`File format is not recognized.`ã€‚ç›®å‰æƒ³åˆ°çš„è§£å†³æ–¹æ¡ˆæ˜¯ js ç›‘å¬é”™è¯¯ï¼Œç„¶åè¿›è¡Œå¤„ç†ã€‚è‹¥æœ‰æ›´å¥½æƒ³æ³•çš„ï¼Œæ¬¢è¿@æˆ‘ã€‚åœ¨æ­¤æå‰æ„Ÿè°¢ã€‚
 
 ```
-// console.error() ¼à¿Ø´¦Àí
+// console.error() ç›‘æ§å¤„ç†
 consoleError = window.console.error;
 window.console.error = function () {
     consoleError && consoleError.apply(window, arguments);
     for (var info in arguments) {
         if (arguments[info] == 'File format is not recognized.') {
-            $('#app_parse').html('<p style="color:red;">ÓÉÓÚÄúÉÏ´«ÁË·ÇÕæÕıµÄ APK ÎÄ¼ş£¬µ¼ÖÂ½Å±¾½âÎö³ö´í£¬¼´½«ÖØĞÂË¢ĞÂÒ³Ãæ£¬¸øÄú´øÀ´²»ºÃµÄÌåÑé£¬¾´ÇëÔ­ÁÂ</p>');
+            $('#app_parse').html('<p style="color:red;">ç”±äºæ‚¨ä¸Šä¼ äº†éçœŸæ­£çš„ APK æ–‡ä»¶ï¼Œå¯¼è‡´è„šæœ¬è§£æå‡ºé”™ï¼Œå³å°†é‡æ–°åˆ·æ–°é¡µé¢ï¼Œç»™æ‚¨å¸¦æ¥ä¸å¥½çš„ä½“éªŒï¼Œæ•¬è¯·åŸè°…</p>');
             setTimeout(function () {
                 history.go(0);
             }, 3000);
@@ -86,25 +86,25 @@ window.console.error = function () {
     }
 };
 ```
-ÎªÁË±ÜÃâÒ³ÃæÆäËü´íÎó£¬µ¼ÖÂ½Å±¾ÎŞ·¨ÔËĞĞ£¬Òò´Ë×öÁËÒ³ÃæË¢ĞÂ¡£
+ä¸ºäº†é¿å…é¡µé¢å…¶å®ƒé”™è¯¯ï¼Œå¯¼è‡´è„šæœ¬æ— æ³•è¿è¡Œï¼Œå› æ­¤åšäº†é¡µé¢åˆ·æ–°ã€‚
 
-**2. ÍÏ×§ÉÏ´«£¬µã»÷ÉÏ´«ºÍÍÏ×§ÉÏ´«°ó¶¨µ½Ò»Æğ**
+**2. æ‹–æ‹½ä¸Šä¼ ï¼Œç‚¹å‡»ä¸Šä¼ å’Œæ‹–æ‹½ä¸Šä¼ ç»‘å®šåˆ°ä¸€èµ·**
 
-ÔÚ×öÕâ¸ö¹¦ÄÜÇ°£¬Ïëµ½ÍÏ×§ÉÏ´«¿ÉÒÔÀûÓÃ H5 µÄÍÏ×§¹¦ÄÜ¼°Ô­Éú js µÄ file ÎÄ¼şÉÏ´«ÊµÏÖ£¬µ«ĞèÒª´¦Àí¼æÈİĞÔÎÊÌâ¡£ºóÀ´Ïëµ½ÏµÍ³ÖĞÒÑ¾­ÒıÈëÁË **jquery.fileupload** ¿â£¬ÓÚÊÇÌØµØ·­ÔÄÁËÎÄµµ£¬Ö§³ÖÍÏ×§ÉÏ´«¡£Òò´Ë²ÉÓÃ¸Ã¿âÊµÏÖÍÏ×§ÉÏ´«¹¦ÄÜ¡£
+åœ¨åšè¿™ä¸ªåŠŸèƒ½å‰ï¼Œæƒ³åˆ°æ‹–æ‹½ä¸Šä¼ å¯ä»¥åˆ©ç”¨ H5 çš„æ‹–æ‹½åŠŸèƒ½åŠåŸç”Ÿ js çš„ file æ–‡ä»¶ä¸Šä¼ å®ç°ï¼Œä½†éœ€è¦å¤„ç†å…¼å®¹æ€§é—®é¢˜ã€‚åæ¥æƒ³åˆ°ç³»ç»Ÿä¸­å·²ç»å¼•å…¥äº† **jquery.fileupload** åº“ï¼Œäºæ˜¯ç‰¹åœ°ç¿»é˜…äº†æ–‡æ¡£ï¼Œæ”¯æŒæ‹–æ‹½ä¸Šä¼ ã€‚å› æ­¤é‡‡ç”¨è¯¥åº“å®ç°æ‹–æ‹½ä¸Šä¼ åŠŸèƒ½ã€‚
 
-html ²¼¾ÖÈçÏÂ£º
+html å¸ƒå±€å¦‚ä¸‹ï¼š
 ```
 <div class="upload-area" id="upload_area">
     <i class="icon-upload"></i>
-    <p class="upload-text">½«°²×°°üÍÏ×§ÖÁ´ËÉÏ´«»ò <em>Ñ¡ÔñÎÄ¼ş</em></p>
-    <p class="upload-tip">Ö§³Ö APK ÎÄ¼ş£¬×î´ó²»³¬¹ı 300 MB</p>
+    <p class="upload-text">å°†å®‰è£…åŒ…æ‹–æ‹½è‡³æ­¤ä¸Šä¼ æˆ– <em>é€‰æ‹©æ–‡ä»¶</em></p>
+    <p class="upload-tip">æ”¯æŒ APK æ–‡ä»¶ï¼Œæœ€å¤§ä¸è¶…è¿‡ 300 MB</p>
     <input type="file" id="upload_input" name="file" accept="application/vnd.android.package-archive" data-size="300"/>
 </div>
 ```
 
-ÈçºÎ½« **ÍÏ×§¡¢µã»÷** Ò»Æğ´¦Àí£¬ÓÃÒ»¸öÉÏ´«·½·¨ÊµÏÖ£¬¶ø²»ÊÇ·Ö¿ªĞèÒªÊµÏÖ2±é£¿
+å¦‚ä½•å°† **æ‹–æ‹½ã€ç‚¹å‡»** ä¸€èµ·å¤„ç†ï¼Œç”¨ä¸€ä¸ªä¸Šä¼ æ–¹æ³•å®ç°ï¼Œè€Œä¸æ˜¯åˆ†å¼€éœ€è¦å®ç°2éï¼Ÿ
 
-Ïë·¨ÊÇ£¬µã»÷Íâ²ãÈİÆ÷£¬´¥·¢ input µã»÷ÊÂ¼ş¡£Ç°ÌáÊÇĞèÒªÊµÏÖ input µã»÷ÊÂ¼ş£¬²¢ÇÒ×èÖ¹Ã°ÅİÊÂ¼ş£¬ÒòÎªÍâ²ãÒ²ÓĞµã»÷ÊÂ¼ş¡£
+æƒ³æ³•æ˜¯ï¼Œç‚¹å‡»å¤–å±‚å®¹å™¨ï¼Œè§¦å‘ input ç‚¹å‡»äº‹ä»¶ã€‚å‰ææ˜¯éœ€è¦å®ç° input ç‚¹å‡»äº‹ä»¶ï¼Œå¹¶ä¸”é˜»æ­¢å†’æ³¡äº‹ä»¶ï¼Œå› ä¸ºå¤–å±‚ä¹Ÿæœ‰ç‚¹å‡»äº‹ä»¶ã€‚
 
 ```
 $('body').on('click', '#upload_input', function (e) {
@@ -134,82 +134,82 @@ $('body').on('click', '#upload_input', function (e) {
     }
 })
 ```
-ÊµÏÖÁËÍÏ×§½øÈë¸ßÁÁ¡¢Ô¶Àë»Ö¸´¡£ĞèÒª×¢ÒâµÄÊÇ£¬`$('#upload_input')` ²»ÄÜÓÃ»º´æµÄ±äÁ¿¡£·ñÔò»áµ¼ÖÂ¶ş´Îµã»÷ÉÏ´«Ê§Ğ§£¬ÎŞ·¨´¥·¢µã»÷´ò¿ªÎÄ¼ş´°¿Ú¡£ÒÔ¼°´ËÊ±ÍÏ×§ÉÏ´«Ò»¸öÕıÈ·µÄÎÄ¼ş£¬»á´¥·¢ 2 ´ÎÎÄ¼şÉÏ´«¡£·¢ËÍ 2 ´ÎÉÏ´«½Ó¿Ú¡£¸ĞĞËÈ¤µÄÅóÓÑ¿ÉÒÔ×Ô¼ºÓÃ»º´æµÄÊÔÒ»ÏÂ¡£
+å®ç°äº†æ‹–æ‹½è¿›å…¥é«˜äº®ã€è¿œç¦»æ¢å¤ã€‚éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œ`$('#upload_input')` ä¸èƒ½ç”¨ç¼“å­˜çš„å˜é‡ã€‚å¦åˆ™ä¼šå¯¼è‡´äºŒæ¬¡ç‚¹å‡»ä¸Šä¼ å¤±æ•ˆï¼Œæ— æ³•è§¦å‘ç‚¹å‡»æ‰“å¼€æ–‡ä»¶çª—å£ã€‚ä»¥åŠæ­¤æ—¶æ‹–æ‹½ä¸Šä¼ ä¸€ä¸ªæ­£ç¡®çš„æ–‡ä»¶ï¼Œä¼šè§¦å‘ 2 æ¬¡æ–‡ä»¶ä¸Šä¼ ã€‚å‘é€ 2 æ¬¡ä¸Šä¼ æ¥å£ã€‚æ„Ÿå…´è¶£çš„æœ‹å‹å¯ä»¥è‡ªå·±ç”¨ç¼“å­˜çš„è¯•ä¸€ä¸‹ã€‚
 
-°¸Àı¸´ÏÖ£º
-- µã»÷¼ÙµÄÄÚÈİÎª¿ÕµÄ apk ÎÄ¼ş£¬»áÌáÊ¾£ºÎÄ¼ş³ß´ç²»¶Ô¡£
-- ´ËÊ±£¬µÚ¶ş´Îµã»÷£¬ÎŞ·¨´¥·¢ input µÄµã»÷ÊÂ¼ş¡£·´¸´¶à´ÎÒÀÈ»ÎŞĞ§¡£
-- ´ËÊ±£¬Í¨¹ıÍÏ×§ÉÏ´«£¬ÄÜ¹»Õı³£Ö´ĞĞ£¬µ«ÊÇ»á´¥·¢ 2 ´ÎÉÏ´«´¦Àí£¬½âÎö 2 ´ÎÎÄ¼ş£¬·¢ËÍ 2 ´ÎÉÏ´«½Ó¿ÚÇëÇó¡£
+æ¡ˆä¾‹å¤ç°ï¼š
+- ç‚¹å‡»å‡çš„å†…å®¹ä¸ºç©ºçš„ apk æ–‡ä»¶ï¼Œä¼šæç¤ºï¼šæ–‡ä»¶å°ºå¯¸ä¸å¯¹ã€‚
+- æ­¤æ—¶ï¼Œç¬¬äºŒæ¬¡ç‚¹å‡»ï¼Œæ— æ³•è§¦å‘ input çš„ç‚¹å‡»äº‹ä»¶ã€‚åå¤å¤šæ¬¡ä¾ç„¶æ— æ•ˆã€‚
+- æ­¤æ—¶ï¼Œé€šè¿‡æ‹–æ‹½ä¸Šä¼ ï¼Œèƒ½å¤Ÿæ­£å¸¸æ‰§è¡Œï¼Œä½†æ˜¯ä¼šè§¦å‘ 2 æ¬¡ä¸Šä¼ å¤„ç†ï¼Œè§£æ 2 æ¬¡æ–‡ä»¶ï¼Œå‘é€ 2 æ¬¡ä¸Šä¼ æ¥å£è¯·æ±‚ã€‚
 
-**3. ÔÚÉÏ´«Ö®Ç°²»ÖªµÀ APK ÎÄ¼şĞÅÏ¢£¬ĞèÒªÖ´ĞĞÉÏ´«²Ù×÷¹ı³ÌÖĞ½«½âÎöµÄÎÄ¼şĞÅÏ¢×÷Îª²ÎÊı·Åµ½ÉÏ´«½Ó¿ÚÖĞ**
+**3. åœ¨ä¸Šä¼ ä¹‹å‰ä¸çŸ¥é“ APK æ–‡ä»¶ä¿¡æ¯ï¼Œéœ€è¦æ‰§è¡Œä¸Šä¼ æ“ä½œè¿‡ç¨‹ä¸­å°†è§£æçš„æ–‡ä»¶ä¿¡æ¯ä½œä¸ºå‚æ•°æ”¾åˆ°ä¸Šä¼ æ¥å£ä¸­**
 
-Ö®Ç°×ö¹ıµÄÉÏ´«£¬ÊÇÔÚÉÏ´«Ç°¾ÍÒÑ¾­ÖªµÀÔÚÉÏ´«Ê±ĞèÒªÌá½»µÄ¶îÍâ²ÎÊıÖµ¡£
+ä¹‹å‰åšè¿‡çš„ä¸Šä¼ ï¼Œæ˜¯åœ¨ä¸Šä¼ å‰å°±å·²ç»çŸ¥é“åœ¨ä¸Šä¼ æ—¶éœ€è¦æäº¤çš„é¢å¤–å‚æ•°å€¼ã€‚
 
 ```
 $('#upload_input').fileupload({
     url: 'http://localhost:80/jq-drag-upload-apk-parse/upload.php',
     dataType: 'json',
-    formData: params, // params Îª js ¶ÔÏó£¬ÊÇĞèÒªÌá½»µÄ²ÎÊı
+    formData: params, // params ä¸º js å¯¹è±¡ï¼Œæ˜¯éœ€è¦æäº¤çš„å‚æ•°
     multi: false,
-    // Ê¡ÂÔ....
+    // çœç•¥....
 })
 ```
 
-µ«ÏÖÔÚ£¬ÔÚÉÏ´«Ç°ÊÇ²»ÖªµÀ²ÎÊıÖµµÄ£¬ĞèÒªÔÚÖ´ĞĞÉÏ´«²Ù×÷£¬ÄÃµ½ÉÏ´«ÎÄ¼şĞÅÏ¢£¬²¢½âÎö³öÉÏ´«ÎÄ¼şµÄĞÅÏ¢£¬È»ºó½«½âÎöĞÅÏ¢×öÎª²ÎÊıÖµ·Åµ½ÉÏ´«ÇëÇóÖĞ¡£ÄÇÔõÃ´×öÄØ£¬ÑĞ¾¿ÁËºÜ¾Ã£¬²ÅÕÒµ½¡£
+ä½†ç°åœ¨ï¼Œåœ¨ä¸Šä¼ å‰æ˜¯ä¸çŸ¥é“å‚æ•°å€¼çš„ï¼Œéœ€è¦åœ¨æ‰§è¡Œä¸Šä¼ æ“ä½œï¼Œæ‹¿åˆ°ä¸Šä¼ æ–‡ä»¶ä¿¡æ¯ï¼Œå¹¶è§£æå‡ºä¸Šä¼ æ–‡ä»¶çš„ä¿¡æ¯ï¼Œç„¶åå°†è§£æä¿¡æ¯åšä¸ºå‚æ•°å€¼æ”¾åˆ°ä¸Šä¼ è¯·æ±‚ä¸­ã€‚é‚£æ€ä¹ˆåšå‘¢ï¼Œç ”ç©¶äº†å¾ˆä¹…ï¼Œæ‰æ‰¾åˆ°ã€‚
 
 ```
 $('#upload_input').fileupload({
     url: 'http://localhost:80/jq-drag-upload-apk-parse/upload.php',
     dataType: 'json',
-    formData: params, // params Îª js ¶ÔÏó£¬ÊÇĞèÒªÌá½»µÄ²ÎÊı
+    formData: params, // params ä¸º js å¯¹è±¡ï¼Œæ˜¯éœ€è¦æäº¤çš„å‚æ•°
     multi: false,
     add: function (e, data) {
-        // Ê¡ÂÔÎÄ¼şÀàĞÍ¼°´óĞ¡Ğ£Ñé
-        // Ê¡ÂÔ APK ÎÄ¼ş½âÎö¼°½ø¶ÈÌõµÈµÄ UI ³õÊ¼»¯
+        // çœç•¥æ–‡ä»¶ç±»å‹åŠå¤§å°æ ¡éªŒ
+        // çœç•¥ APK æ–‡ä»¶è§£æåŠè¿›åº¦æ¡ç­‰çš„ UI åˆå§‹åŒ–
         
         $(e.target).fileupload(
             'option',
             'formData',
-            formAppInfo // APK ½âÎö³öµÄÊı¾İ
+            formAppInfo // APK è§£æå‡ºçš„æ•°æ®
         );
         data.submit();
     },
-    // Ê¡ÂÔ....
+    // çœç•¥....
 })
 ```
 
-**4. ÉÏ´«¹ı³ÌÖĞÈ¡ÏûÉÏ´«**
+**4. ä¸Šä¼ è¿‡ç¨‹ä¸­å–æ¶ˆä¸Šä¼ **
 
-Õâ¸öÏà¶Ô±È½ÏÈİÒ×¡£ÀûÓÃÉÏ´«»Øµ÷ÖĞµÄ `data.abort()` ¼´¿ÉÊµÏÖ¡£ĞèÒª´¦ÀíµÄÊÇ£¬ÔÚ **add()** ·½·¨ÀïĞèÒªÏÈÔÚÍâ²ã»º´æÒ»ÏÂ data£¬²Å·½±ã¶ÔÆäµÄµ÷ÓÃ¡£
+è¿™ä¸ªç›¸å¯¹æ¯”è¾ƒå®¹æ˜“ã€‚åˆ©ç”¨ä¸Šä¼ å›è°ƒä¸­çš„ `data.abort()` å³å¯å®ç°ã€‚éœ€è¦å¤„ç†çš„æ˜¯ï¼Œåœ¨ **add()** æ–¹æ³•é‡Œéœ€è¦å…ˆåœ¨å¤–å±‚ç¼“å­˜ä¸€ä¸‹ dataï¼Œæ‰æ–¹ä¾¿å¯¹å…¶çš„è°ƒç”¨ã€‚
 
 ```
 $('#upload_input').fileupload({
     url: 'http://localhost:80/jq-drag-upload-apk-parse/upload.php',
     dataType: 'json',
-    formData: params, // params Îª js ¶ÔÏó£¬ÊÇĞèÒªÌá½»µÄ²ÎÊı
+    formData: params, // params ä¸º js å¯¹è±¡ï¼Œæ˜¯éœ€è¦æäº¤çš„å‚æ•°
     multi: false,
     add: function (e, data) {
-        // Ê¡ÂÔÎÄ¼şÀàĞÍ¼°´óĞ¡Ğ£Ñé
-        // Ê¡ÂÔ APK ÎÄ¼ş½âÎö¼°½ø¶ÈÌõµÈµÄ UI ³õÊ¼»¯
+        // çœç•¥æ–‡ä»¶ç±»å‹åŠå¤§å°æ ¡éªŒ
+        // çœç•¥ APK æ–‡ä»¶è§£æåŠè¿›åº¦æ¡ç­‰çš„ UI åˆå§‹åŒ–
         
-        // Íâ²ã»º´æ£¬·½±ãµ÷È¡ÏûÉÏ´«
+        // å¤–å±‚ç¼“å­˜ï¼Œæ–¹ä¾¿è°ƒå–æ¶ˆä¸Šä¼ 
         uploadMod.uploadXHR = data;
         
         $(e.target).fileupload(
             'option',
             'formData',
-            formAppInfo // APK ½âÎö³öµÄÊı¾İ
+            formAppInfo // APK è§£æå‡ºçš„æ•°æ®
         );
         data.submit();
     },
     fail: function(e, data) {
         if (data.errorThrown == 'abort') {
-            uploadMod.doms.uploadErr.html('ÒÑÈ¡ÏûÉÏ´«£¬¿ÉÖØĞÂÉÏ´«');
+            uploadMod.doms.uploadErr.html('å·²å–æ¶ˆä¸Šä¼ ï¼Œå¯é‡æ–°ä¸Šä¼ ');
         } else {
-            uploadMod.doms.uploadErr.html('ÉÏ´«Ê§°Ü£¬ÇëÖØĞÂÉÏ´«');
+            uploadMod.doms.uploadErr.html('ä¸Šä¼ å¤±è´¥ï¼Œè¯·é‡æ–°ä¸Šä¼ ');
         }
     },
-    // Ê¡ÂÔ....
+    // çœç•¥....
 })
 ```
 
@@ -219,18 +219,18 @@ $('body').on('click', '#upload_cancel', function () {
 })
 ```
 
-**5. ÎÄ¼şÉÏ´«µÄÖ÷Òª´úÂë**
+**5. æ–‡ä»¶ä¸Šä¼ çš„ä¸»è¦ä»£ç **
 
 ```
 fileCheck: function(e, data) {
-    // ÎÄ¼ş¸ñÊ½¼°ÎÄ¼ş´óĞ¡Ğ£Ñé
+    // æ–‡ä»¶æ ¼å¼åŠæ–‡ä»¶å¤§å°æ ¡éªŒ
     var acceptFileTypes = uploadMod.doms.uploadInput.attr('accept');
-    var maxSize = uploadMod.doms.uploadInput.data('size') * 1024 * 1024; // µ¥Î»mb£¬ĞèÒª×ª»»Îªb
+    var maxSize = uploadMod.doms.uploadInput.data('size') * 1024 * 1024; // å•ä½mbï¼Œéœ€è¦è½¬æ¢ä¸ºb
     var fileTypeFlag = data.originalFiles.every(function(item) {
         return acceptFileTypes.indexOf(item.type) > -1;
     });
     if (!fileTypeFlag) {
-        uploadMod.doms.uploadErr.html('ÇëÉÏ´« APK ÎÄ¼ş');
+        uploadMod.doms.uploadErr.html('è¯·ä¸Šä¼  APK æ–‡ä»¶');
         return false;
     }
     var fileSizeFlag = data.originalFiles.every(function(item) {
@@ -238,7 +238,7 @@ fileCheck: function(e, data) {
     });
     if (!fileSizeFlag) {
         data = {};
-        uploadMod.doms.uploadErr.html('ÎÄ¼ş´óĞ¡²»ÕıÈ·');
+        uploadMod.doms.uploadErr.html('æ–‡ä»¶å¤§å°ä¸æ­£ç¡®');
         return false;
     }
     
@@ -248,7 +248,7 @@ fileCheck: function(e, data) {
     $appParse.show();
     $progressCon.hide();
 
-    // apk ÎÄ¼ş½âÎö
+    // apk æ–‡ä»¶è§£æ
     var parser = new AppInfoParser(data.files[0]);
     parser.parse().then(function(result) {
         uploadMod.doms.uploadErr.html('');
@@ -260,7 +260,7 @@ fileCheck: function(e, data) {
             version_code: result.versionCode
         };
 
-        // ½ø¶ÈÌõ³õÊ¼»¯
+        // è¿›åº¦æ¡åˆå§‹åŒ–
         $appParse.hide();
         $progressCon.show();
         if (result.icon) {
@@ -274,7 +274,7 @@ fileCheck: function(e, data) {
         uploadMod.doms.progressWrap.find('.num').html(0);
         uploadMod.doms.progressWrap.find('.size').html(0);
 
-        // ÉèÖÃÉÏ´«½Ó¿Ú²ÎÊı
+        // è®¾ç½®ä¸Šä¼ æ¥å£å‚æ•°
         uploadMod.uploadXHR = data;
         $(e.target).fileupload(
             'option',
@@ -284,17 +284,17 @@ fileCheck: function(e, data) {
         data.submit();
     }).catch(function (err) {
         uploadMod.doms.progressWrap.hide();
-        uploadMod.doms.uploadErr.html('ÎÄ¼ş½âÎö´íÎó£¬ÇëÖØĞÂÉÏ´«');
+        uploadMod.doms.uploadErr.html('æ–‡ä»¶è§£æé”™è¯¯ï¼Œè¯·é‡æ–°ä¸Šä¼ ');
         data.abort();
     });
     
-    // console.error() ¼à¿Ø´¦Àí
+    // console.error() ç›‘æ§å¤„ç†
     consoleError = window.console.error;
     window.console.error = function () {
         consoleError && consoleError.apply(window, arguments);
         for (var info in arguments) {
             if (arguments[info] == 'File format is not recognized.') {
-                $('#app_parse').html('<p style="color:red;">ÓÉÓÚÄúÉÏ´«ÁË·ÇÕæÕıµÄ APK ÎÄ¼ş£¬µ¼ÖÂ½Å±¾½âÎö³ö´í£¬¼´½«ÖØĞÂË¢ĞÂÒ³Ãæ£¬¸øÄú´øÀ´²»ºÃµÄÌåÑé£¬¾´ÇëÔ­ÁÂ</p>');
+                $('#app_parse').html('<p style="color:red;">ç”±äºæ‚¨ä¸Šä¼ äº†éçœŸæ­£çš„ APK æ–‡ä»¶ï¼Œå¯¼è‡´è„šæœ¬è§£æå‡ºé”™ï¼Œå³å°†é‡æ–°åˆ·æ–°é¡µé¢ï¼Œç»™æ‚¨å¸¦æ¥ä¸å¥½çš„ä½“éªŒï¼Œæ•¬è¯·åŸè°…</p>');
                 setTimeout(function () {
                     history.go(0);
                 }, 3000);
@@ -310,22 +310,22 @@ fileUpload: function(el) {
         multi: false,
         add: uploadMod.methods.fileCheck,
         paste: function () { return false; },
-        done: function(e, data) { // ÉÏ´«³É¹¦»Øµ÷
+        done: function(e, data) { // ä¸Šä¼ æˆåŠŸå›è°ƒ
             var result = data.result;
             if (result && result.flag && result.data) {
-                uploadMod.doms.uploadErr.html(result.msg || 'ÉÏ´«³É¹¦');
+                uploadMod.doms.uploadErr.html(result.msg || 'ä¸Šä¼ æˆåŠŸ');
                 uploadMod.data.selectedAPK = result.data;
                 uploadMod.methods.renderHistory(result.data);
             } else {
                 uploadMod.doms.progressWrap.hide();
-                uploadMod.doms.uploadErr.html(result.msg || 'ÉÏ´«Ê§°Ü');
+                uploadMod.doms.uploadErr.html(result.msg || 'ä¸Šä¼ å¤±è´¥');
             }
         },
         fail: function(e, data) {
             if (data.errorThrown == 'abort') {
-                uploadMod.doms.uploadErr.html('ÒÑÈ¡ÏûÉÏ´«£¬¿ÉÖØĞÂÉÏ´«');
+                uploadMod.doms.uploadErr.html('å·²å–æ¶ˆä¸Šä¼ ï¼Œå¯é‡æ–°ä¸Šä¼ ');
             } else {
-                uploadMod.doms.uploadErr.html('ÉÏ´«Ê§°Ü£¬ÇëÖØĞÂÉÏ´«');
+                uploadMod.doms.uploadErr.html('ä¸Šä¼ å¤±è´¥ï¼Œè¯·é‡æ–°ä¸Šä¼ ');
             }
         },
         progressall: function(e, data) {
@@ -348,14 +348,14 @@ fileUpload: function(el) {
 },
 ```
 
-### php »·¾³¼òµ¥´î½¨
-- ÏÂÔØ xampp ¼¯³É»·¾³°ü½øĞĞ°²×°
-- ÔÚ demo ÏîÄ¿½âÑ¹¿½±´µ½°²×°Ä¿Â¼ÏÂµÄ **htdocs** µÄÄ¿Â¼ÏÂ£¬ÎÒµÄÄ¿Â¼ÊÇ `C:\xampp\htdocs\jq-drag-upload-apk-parse`
-- ÓÉÓÚ php ÉÏ´«ÓĞÏŞÖÆ£¬ĞèÒª¸ÄÎÄ¼ş`C:\xampp\php\php.ini`£¬ĞèÒªĞŞ¸ÄµÄµã£º
-    - `max_execution_time = 0`£¬Ä¬ÈÏ 30 Ãë£¬0 ÎªÎŞÏŞÖÆ
-    - `post_max_size = 500M`£¬Ä¬ÈÏ 2M
-    - `upload_max_filesize = 100M`£¬Ä¬ÈÏ 8M
-    - ps£º²Î¿¼[PHPÉÏ´«´óĞ¡ÏŞÖÆĞŞ¸Ä](http://www.php.cn/php-weizijiaocheng-387028.html)
-- ×îºóµã»÷°²×°Ä¿Â¼ÏÂµÄ(`C:\xampp`)µÄ **xampp.control.exe** ´ò¿ª½çÃæ£¬ÔÚ´ò¿ª½çÃæÖĞ£¬½« **Apache** ¶ÔÓ¦µÄ **Actions** ¿ªÆô
-- ÔÚä¯ÀÀÆ÷´°¿ÚÊäÈë`http://localhost/jq-drag-upload-apk-parse/index.html`
-- ¼´¿ÉÍêÕû²é¿´ demo Ğ§¹û
+### php ç¯å¢ƒç®€å•æ­å»º
+- ä¸‹è½½ xampp é›†æˆç¯å¢ƒåŒ…è¿›è¡Œå®‰è£…
+- åœ¨ demo é¡¹ç›®è§£å‹æ‹·è´åˆ°å®‰è£…ç›®å½•ä¸‹çš„ **htdocs** çš„ç›®å½•ä¸‹ï¼Œæˆ‘çš„ç›®å½•æ˜¯ `C:\xampp\htdocs\jq-drag-upload-apk-parse`
+- ç”±äº php ä¸Šä¼ æœ‰é™åˆ¶ï¼Œéœ€è¦æ”¹æ–‡ä»¶`C:\xampp\php\php.ini`ï¼Œéœ€è¦ä¿®æ”¹çš„ç‚¹ï¼š
+    - `max_execution_time = 0`ï¼Œé»˜è®¤ 30 ç§’ï¼Œ0 ä¸ºæ— é™åˆ¶
+    - `post_max_size = 500M`ï¼Œé»˜è®¤ 2M
+    - `upload_max_filesize = 100M`ï¼Œé»˜è®¤ 8M
+    - psï¼šå‚è€ƒ[PHPä¸Šä¼ å¤§å°é™åˆ¶ä¿®æ”¹](http://www.php.cn/php-weizijiaocheng-387028.html)
+- æœ€åç‚¹å‡»å®‰è£…ç›®å½•ä¸‹çš„(`C:\xampp`)çš„ **xampp.control.exe** æ‰“å¼€ç•Œé¢ï¼Œåœ¨æ‰“å¼€ç•Œé¢ä¸­ï¼Œå°† **Apache** å¯¹åº”çš„ **Actions** å¼€å¯
+- åœ¨æµè§ˆå™¨çª—å£è¾“å…¥`http://localhost/jq-drag-upload-apk-parse/index.html`
+- å³å¯å®Œæ•´æŸ¥çœ‹ demo æ•ˆæœ
