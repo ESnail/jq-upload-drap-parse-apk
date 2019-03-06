@@ -368,9 +368,16 @@
             fileCheck: function(e, data) {
                 // 文件格式及文件大小校验
                 var acceptFileTypes = uploadMod.doms.uploadInput.attr('accept');
+				var supportFileTypes = ['apk']; // 通过name后缀再校验一次，避免获取不到type的情况
                 var maxSize = uploadMod.doms.uploadInput.data('size') * 1024 * 1024; // 单位mb，需要转换为b
                 var fileTypeFlag = data.originalFiles.every(function(item) {
-                    return acceptFileTypes.indexOf(item.type) > -1;
+                    if (item.type) {
+                        return acceptFileTypes.indexOf(item.type) > -1;
+                     } else {
+                        var splits = (item.name || file).split('.');
+                        var fileType = splits[splits.length - 1];
+                        return supportFileTypes.indexOf(fileType) > -1;
+                    }
                 });
                 if (!fileTypeFlag) {
                     uploadMod.doms.uploadErr.html('请上传 APK 文件');
